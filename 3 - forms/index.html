@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Quicksand&family=Raleway&display=swap');
+
+        body {
+            margin: 3rem 20rem;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'PT Sans', sans-serif;
+            background-color: #212121;
+            color: white;
+        }
+
+        .block {
+            color: white;
+            padding: 15px 20px;
+        }
+
+        .sub {
+            float: right;
+            margin-top: 10px;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        textarea{
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Start : Form Section  -->
+    <h1> Task 3 : Form using all Attributes</h1>
+    <form autocomplete="on">
+        <fieldset>
+            <legend> Personal Details</legend>
+            <!-- Name Details  -->
+            <div class="block">
+                <label for="fname"> First Name :- </label>
+                <input type="text" autofocus name="fname" required placeholder="Enter Here">
+            </div>
+            <div class="block">
+                <label for="mname"> Middle Name :- </label>
+                <input type="text" name="mname" required placeholder="Enter Here">
+            </div>
+            <div class="block">
+                <label for="lname"> Last Name :- </label>
+                <input type="text" name="lname" required placeholder="Enter Here">
+            </div>
+
+            <div class="block">
+                <label for="mobile"> Contact Number :- </label>
+                <input type="number" min="10" name="mobile" required placeholder="Enter Number">
+            </div>
+
+            <div class="block">
+                <label for="age"> Age :- </label>
+                <input type="number" name="age" style="width: 40px;" required>
+            </div>
+
+            <div class="block">
+                <label for="dob"> Date of Birth :- </label>
+                <input type="date" name="dob" required>
+            </div>
+
+            <div class="block">
+                <label for="add"> Address :- </label>
+                <textarea name="add" id="add" cols="30" rows="7"
+                    placeholder="Flat No, Building Name, street name, city name - pincode"></textarea>
+            </div>
+
+            <!-- Radio Type -->
+            <div class="block">
+                <label for="gender"> Gender :- </label>
+                <input type="radio" name="gender" value="male" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" required value="female" id="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" required value="other" id="other">
+                <label for="other">Others</label>
+            </div>
+
+            <!-- Select Type  -->
+            <div class="block">
+                <label for="country"> Country :-</label>
+                <select name="country" id="">
+                    <option value="india" selected> India</option>
+                    <option value="China" > China</option>
+                    <option value="canada" > Canada</option>
+                    <option value="srilanka" > Sri Lanka</option>
+                    <option value="pakistan" > Pakistan</option>
+                </select>
+            </div>
+
+            <!-- Checkbox type  -->
+
+            <fieldset>
+                <legend> <label for="games"> Which Games you have Played?</label> </legend>
+                <ul>
+                    <li><input type="checkbox" name="games" id="cod" value="cod">
+                        <label for="cod"> COD</label>
+                    </li>
+                    <li> <input type="checkbox" name="games" id="battlefield" value="battlefield">
+                        <label for="battlefield"> Battlefield</label>
+                    </li>
+                    <li> <input type="checkbox" name="games" id="gow" value="gow">
+                        <label for="gow"> God of War</label>
+                    </li>
+                    <li> <input type="checkbox" name="games" id="nba" value="nba">
+                        <label for="nba"> NBA</label>
+                    </li>
+                    <li><input type="checkbox" name="games" id="pubg" value="pubg">
+                        <label for="pubg"> PUBG</label>
+                    </li>
+                    <li><input type="checkbox" name="games" id="bgmi" value="bgmi">
+                        <label for="bgmi"> BGMI</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+
+            <!-- Start : Vehicle Form  -->
+
+            <fieldset>
+                <legend> Vehicle Form</legend>
+
+                <div class="block">
+                    <label for="name">Vehicle Name:-</label>
+                    <input type="text" id="name" required placeholder="Model Name">
+                </div>
+
+                <div class="block">
+                    <label for="num">Vehicle Number:-</label>
+                    <input type="text" id="num" required placeholder="Eg. GJ 15 BA 1458">
+                </div>
+
+                <div class="block">
+                    <label for="type"> Vehicle Type :-</label>
+                    <input type="radio" id="stake" name="type" value="stake">
+                    <label for="stake">Skateboard</label>
+                    <input type="radio" id="cycle" name="type" value="cycle">
+                    <label for="cycle">Cycle</label>
+                    <input type="radio" id="two" name="type" value="two">
+                    <label for="two">Two Wheeler</label>
+                    <input type="radio" id="car" name="type" value="car">
+                    <label for="car">Car</label>
+                    <input type="radio" id="truck" name="type" value="truck">
+                    <label for="truck">Truck</label>
+                    <input type="radio" id="train" name="type" value="train">
+                    <label for="train">Train</label>
+                    <input type="radio" id="plane" name="type" value="plane">
+                    <label for="plane">Plane</label>
+                    <input type="radio" id="space" name="type" value="space">
+                    <label for="space">Spaceship</label>
+                    <input type="radio" id="ufo" name="type" value="ufo">
+                    <label for="ufo">UFO</label>
+                </div>
+            </fieldset>
+
+            <input type="submit" class="sub">
+        </fieldset>
+    </form>
+</body>
+
+</html>
