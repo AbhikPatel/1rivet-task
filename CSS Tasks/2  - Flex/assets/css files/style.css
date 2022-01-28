@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    
+}
+
+.main{
+    display: flex;
+    height: 100%;
+    background-color: #212121;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 200px;
+    border: 2px solid red;
+}
+
+.content{
+    display: flex;
+    flex-grow: 1;
+    border: 2px solid yellow;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    flex: 0 0 80px;
+    justify-content: space-between;
+    border: 2px solid blue;
+}
