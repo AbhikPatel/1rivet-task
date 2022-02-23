@@ -1,7 +1,10 @@
-body{
-    background-color: #212121;
-}
+// Project base and component style import
+@import 'base/_index.scss';
 
-h1{
-    color: white;
-}
+// Project Specific Components
+@import 'component/_index.scss';
+
+// Now other style import
+@import 'layout/_index.scss';
+
+@import 'utilities/_index.scss';

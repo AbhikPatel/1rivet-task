@@ -1,0 +1,41 @@
+// Header area style
+.main-head{
+    flex: $header-height;
+    padding: $header-padding;
+    
+    .head-left{
+        // border: 1px solid red;
+        width: 20%;
+        // height: 90%;
+        
+        span{
+            font-size: $icon-size;
+        }
+
+        .search-input{
+            padding: 5px;
+            background-color: grey;
+
+            input{
+                background-color: $body-bg;
+                border: none;
+                // padding: 100%;
+            }
+
+            span{
+                padding: 0 10px;
+            }
+
+            button{
+                background-color: $primany-color;
+                font-weight: 600;
+                border: none;
+                padding: 10px;
+                color: $white;
+            }
+        }
+        
+    }
+
+
+}

@@ -1,13 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/scss/style.css">
-    <title>Scss task</title>
-</head>
-<body>
-    <h1> Hello there</h1>
-</body>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/style.min.css"/>
+    <link rel="stylesheet" href="./assets/icomoon/style.css"/>
+    <title>SCSS Practice MockUp</title>
+  </head>
+  <body>
+    <!-- Start: Wrapper Section  -->
+    <div class="wrapper h-100 d-flex flex-column">
+
+      <!-- Start: Header Section  -->
+      <header class="main-head d-flex justify-content-between align-items-center">
+        
+        
+        <!-- Header Left Section  -->
+        <div class="head-left d-flex justify-content-between align-items-center">
+          <span class="icon-dashboard"></span>
+          <div class="search-input d-flex align-items-center">
+            <span class="icon-message"></span>
+            <input type="search" placeholder="search for transaction, items, etc"/>
+            <button id="search">Search</button>
+          </div>
+        </div>
+
+        <!-- Header Right Section  -->
+        <div class="head-right d-flex align-items-center">
+          <span class="icon-message"></span>
+          <span class="icon-bell"></span>
+          <div class="profile">Hllo</div>
+        </div>
+
+      </header>
+      <!-- End: Header Section  -->
+
+      <!-- Start: Main Content Section  -->
+      <section class="main-content d-flex flex-grow overflow-hidden">
+        <!-- Start: Sidebar Section  -->
+        <aside class="sidebar">
+          <!-- Menu Section  -->
+          <ul class="menu">
+            <li class="items">
+              <a href="#" class="links">
+                <span class="icon-dashboard"></span>
+              </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-shop"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-notepad"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-setting"></span> </a>
+            </li>
+          </ul>
+
+          <!-- Log Out Section  -->
+          <ul class="menu">
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-warn"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-exit"></span> </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- End: Sidebar Section  -->
+
+        <!-- Start: Content Section  -->
+        <div class="content flex-grow">
+          <!-- Content Heading  -->
+          <h1 id="heading">Dashboard</h1>
+
+          <!-- Start: Card Section  -->
+          <div class="card-container d-flex flex-wrap">
+            <!-- Card 1  -->
+            <div class="card-box">
+              <div class="card">
+                <!-- Card Logo Section  -->
+                <div class="card-logo">
+                  <span class="icon-eye"></span>
+                  <span class="icon-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-text">
+                  <p>Total Views</p>
+                  <h2>308.402</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card 2  -->
+            <div class="card-box">
+              <div class="card">
+                <!-- Card Logo Section  -->
+                <div class="card-logo">
+                  <span class="icon-eye"></span>
+                  <span class="icon-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-text">
+                  <p>Total Views</p>
+                  <h2>308.402</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card 3  -->
+            <div class="card-box">
+              <div class="card">
+                <!-- Card Logo Section  -->
+                <div class="card-logo">
+                  <span class="icon-eye"></span>
+                  <span class="icon-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-text">
+                  <p>Total Views</p>
+                  <h2>308.402</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Card 4  -->
+            <div class="card-box">
+              <div class="card">
+                <!-- Card Logo Section  -->
+                <div class="card-logo">
+                  <span class="icon-eye"></span>
+                  <span class="icon-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-text">
+                  <p>Total Views</p>
+                  <h2>308.402</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- End: Card Section  -->
+
+
+          <!-- Start: Product Section  -->
+          <div class="product-container d-flex flex-wrap">
+
+            <!-- Table Section  -->
+            <div class="table-box">
+              <div class="product-table">
+                <table>
+                  <thead>
+                    <tr>
+                      <th> No </th>
+                      <th> Product Name </th>
+                      <th> Status </th>
+                      <th> Sold </th>
+                      <th> View </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 1 </td>
+                      <td> Playstation </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 2 </td>
+                      <td> X-box </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 3 </td>
+                      <td> Micromax </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 4 </td>
+                      <td> Iphone </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 4 </td>
+                      <td> Iphone </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 4 </td>
+                      <td> Iphone </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 4 </td>
+                      <td> Iphone </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 4 </td>
+                      <td> Iphone </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Chart Section  -->
+            <div class="chart-box">
+              <div class="chart">
+
+                <!-- Chart Heading  -->
+                <div class="chart-heading">
+                  <h2> Views & Sells </h2>
+                  <p> This Week </p>
+                </div>
+
+                <!-- Chart Status  -->
+                <div class="chart-status">
+                  <h3> Total Views </h3>
+                  <h3> Total Sells </h3>
+                </div>
+
+                <!-- Chart Graph  -->
+                <div class="chart-graph">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Product Section  -->
+
+        </div>
+        <!-- End: Content Section  -->
+
+      </section>
+      <!-- End: Main Content Section  -->
+
+    </div>
+    <!-- End: Wrapper Section  -->
+  </body>
 </html>
