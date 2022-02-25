@@ -1,27 +1,17 @@
 .content{
-    border: 1px solid green;
-    background-color: $content-bg;
-    padding: 30px;
+    z-index: 99;
+    background-color: $body-bg;
+    margin-left: 80px;
+    padding: 30px 50px;
     overflow: auto;
-
-    #heading{
-        color: $header-text-color;
-        font-size: $heading;
-    }
-
-    .card-container{
-        border: 1px solid red;
-        margin: 20px -20px;
-        .card-box{
-            padding: 0 20px;
-            width: 25%;
-            // border: 1px solid black;
-        }
-    }
-
-    .product-container{
-        border: 1px solid blue;
-        padding: 0 10px;
-        height: auto;
+    transition: $transition;
+    
+    label{
+        top: 45%;
+        left: 0;
+        color: $icon-color;
+        transition: $transition;
+        cursor: pointer;
+        font-size: $icon-size;
     }
 }

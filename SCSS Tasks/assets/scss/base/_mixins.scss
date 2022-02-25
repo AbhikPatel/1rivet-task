@@ -1,1 +1,12 @@
 // All the SCSS mixins goes here
+
+
+
+@mixin media ($size) {
+   
+    @media (max-width: 992px) {
+          @content
+    }
+}
+
+

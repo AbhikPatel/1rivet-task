@@ -1,29 +1,28 @@
 // Color
 $white: #fff;
 
+// Border 
+$border-color: #edf4ff;
+$border-card: #e5e7e9;
+
+// Icon 
+$icon-color: #abb1bf;
+
 // Main Colors 
 $primany-color: #438ffe;
 $body-bg: #f8f8f8;
-$header-text-color: #160e4d; 
 
-// Card Color 
-$card-text: #b2b7c4;
-$card-border: $card-text;
-$card-hover: $primany-color;
-$card-icon: #8bc38a;
-$card-icoc-bg: #f4f9f4;
+// Text 
+$text-header-color: #160e4d; 
+$text-para: #adb3c1;
 
-// Sidebar
-$sidebar-icon: #abb1bf;
+// Card 
+$card-graph: #fe7f57;
+$card-bg: #edf4ff;
 
-// Table 
-$table-text:$header-text-color;
-$table-active:$primany-color;   
-$table-row-bg: $body-bg;
-
-// Chart 
-$chart-view: #83bcbd;
-$chart-sell: #fe764b;
-
-// Content 
-$content-bg: $body-bg;
+$card-map:(
+    "view" : #edf4ff,
+    "product" : #f4f9f4,
+    "user" : #edf4ff,
+    "sell" : #f3f9f9,
+)

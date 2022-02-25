@@ -1,19 +1,35 @@
-.table-box{
-    width: 70%;
-    padding: 0 10px;
-    
-    .product-table{
-        border: 1px solid green;
+.product-container{
+    margin: 0px -20px;
 
-    }
-}
+    .product-box{
+        width: 65%;
+        padding: 15px;
 
-.chart-box{
-    width: 30%;
-    padding: 0 10px;
-    
-    .chart{
-        border: 1px solid red;
-        
+        .product{
+            background-color: $white;
+            height: auto;
+            padding: 0 20px;
+            &-table{
+                border-collapse: collapse;
+                // margin: 0 20px;
+                // border: 1px solid red;
+
+               
+            }
+        }
+
+
+        th,td{
+            color: $text-header-color;
+            height: 80px;
+            text-align: center;
+        }
+
+        td{
+            font-size: 0.9rem;
+            background-color: #f5f7f9;
+            border-bottom: 20px solid $white;
+        }
+
     }
 }

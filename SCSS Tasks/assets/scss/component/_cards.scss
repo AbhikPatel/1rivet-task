@@ -1,6 +1,76 @@
-// Card styles goes here\
+// Card styles goes here
 
-.card{
-    border: 1px solid black;
-    height: 300px;
+.card-container{
+    margin: 0px -20px;
+
+    .card-box{
+        width: 25%;
+        padding: 15px;
+    }
+    @include for-tablet{
+        .card-box{
+            width: 50%;
+        }
+    
+    }
+    
+    .card{
+        height: $card-height;
+        padding: $card-padding;
+        background-color: $white;
+
+        &-header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        &-logo{
+            background-color: #edf4ff;
+            color: $primany-color;
+            font-size: 1.75rem;
+            padding: 15px;
+        }
+
+        &-graph{
+            font-size: 1.5rem;
+            color: $card-graph;
+        }
+
+        &-body{
+            border-bottom: 1px solid $border-card;
+            padding: 20px 0 50px;
+
+            p{
+                color: $text-para;
+            }
+
+            h2{
+                font-size: 2rem;
+                color: $text-header-color;
+            }
+        }
+
+        &-status{
+            
+            padding: 10px 0;
+
+            p{
+                color: $text-para;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+
 }
+
+@each $clr,$clr-val in $card-map {
+    .card-#{$clr}{
+        .card-logo{
+            background-color: $clr-val;
+        }
+    }
+    
+}
+

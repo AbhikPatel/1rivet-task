@@ -1,41 +1,47 @@
-// Header area style
 .main-head{
     flex: $header-height;
-    padding: $header-padding;
-    
+    border-bottom: 1px solid $border-color;
     .head-left{
-        // border: 1px solid red;
-        width: 20%;
-        // height: 90%;
+        width: $header-logo-width;  
         
         span{
             font-size: $icon-size;
         }
-
-        .search-input{
-            padding: 5px;
-            background-color: grey;
-
-            input{
-                background-color: $body-bg;
-                border: none;
-                // padding: 100%;
-            }
+    }
+    
+    .head-right{
+        padding: $header-padding;
+        
+        .search-box{
+            height: $search-height;
+            width: $search-width;
+            padding-left: 10px;
+            background-color: $body-bg;
 
             span{
-                padding: 0 10px;
+                color: $icon-color
             }
 
-            button{
-                background-color: $primany-color;
-                font-weight: 600;
-                border: none;
-                padding: 10px;
-                color: $white;
+            input{
+                background-color: transparent;
+                padding: 0 40px;
+                margin-left: -10px;
             }
         }
-        
+
+        .profile{  
+            width: $profile-width;
+
+            span{
+                font-size: 1.25rem;
+                color: $icon-color;
+            }
+
+            img{
+                width: 30px;
+                margin-top: 5px;
+                border-radius: 50%;
+            }
+        }
     }
-
-
 }
