@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./assets/css/style.min.css"/>
+    <link rel="stylesheet" href="./assets/icomoon/style.css"/>
+    <title>SCSS Practice MockUp</title>
+  </head>
+  <body>
+    <!-- Start: Wrapper Section  -->
+    <div class="wrapper h-100 d-flex flex-column">
+
+      <!-- Start: Header Section  -->
+      <header class="main-head d-flex align-items-center">
+        
+        
+        <!-- Header Left Section  -->
+        <div class="head-left d-flex align-items-center justify-content-center h-100">
+          <span class="icon-dashboard"></span>
+        </div>
+
+        <!-- Header Right Section  -->
+        <div class="head-right flex-grow align-items-center d-flex justify-content-between">
+          <div class="search-box d-flex align-items-center position-relative">
+            <span class="icon-search position-absolute"></span>
+            <input type="search" class="h-100 w-100 border-none" id="search" placeholder="Search for transaction, item, etc.">
+            <button class="search-btn h-100 border-none"> Search </button>
+          </div>
+          <div class="profile d-flex justify-content-between align-items-center">
+            <span class="icon-message"></span>
+            <span class="icon-bell"></span>
+            <div class="profile-photo">
+              <img src="./assets/images/avatar.png" alt="Profile">
+            </div>
+            <span class="icon-toggle"></span>
+          </div>
+        </div>
+
+      </header>
+      <!-- End: Header Section  -->
+
+      <!-- Start: Main Content Section  -->
+      <section class="main-content d-flex flex-grow overflow-hidden position-relative">
+        <!-- Start: Sidebar Section  -->
+        <input type="checkbox" id="toggle">
+        <aside class="sidebar d-flex overflow-hidden flex-column justify-content-between position-absolute h-100">
+          <!-- Menu Section  -->
+          <ul class="menu text-align-center">
+            <li class="items">
+              <a href="#" class="links">
+                <span class="icon-dashboard"></span>
+              </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-shop"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-notepad"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-setting"></span> </a>
+            </li>
+          </ul>
+
+          <!-- Log Out Section  -->
+          <ul class="menu text-align-center">
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-warn"></span> </a>
+            </li>
+            <li class="items">
+              <a href="#" class="links"> <span class="icon-exit"></span> </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- End: Sidebar Section  -->
+        
+        <!-- Start: Content Section  -->
+        <div class="content flex-grow position-relative">
+          <label for="toggle" class="position-absolute"> <span class="icon-toggle"></span> </label>
+          <!-- Content Heading  -->
+          <h1 id="heading">Dashboard</h1>
+
+          <!-- Start: Card Section  -->
+          <div class="card-container d-flex flex-wrap">
+            <!-- Card 1  -->
+            <div class="card-box">
+              <div class="card card-view">
+                <!-- Card Logo Section  -->
+                <div class="card-header">
+                  <span class="icon-eye card-logo"></span>
+                  <span class="icon-graph card-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-body">
+                  <p>Total Views</p>
+                  <h2>308.402</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 2  -->
+            <div class="card-box">
+              <div class="card card-product">
+                <!-- Card Logo Section  -->
+                <div class="card-header">
+                  <span class="icon-shop card-logo"></span>
+                  <span class="icon-graph card-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-body">
+                  <p>Total Products</p>
+                  <h2>10.820</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Add New Products</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 3  -->
+            <div class="card-box">
+              <div class="card card-user">
+                <!-- Card Logo Section  -->
+                <div class="card-header">
+                  <span class="icon-eye card-logo"></span>
+                  <span class="icon-graph card-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-body">
+                  <p>Total Users</p>
+                  <h2>8.426</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>New User Noted Every Week</p>
+                </div>
+              </div>
+            </div>
+            <!-- Card 4  -->
+            <div class="card-box">
+              <div class="card card-sell">
+                <!-- Card Logo Section  -->
+                <div class="card-header">
+                  <span class="icon-cart  card-logo"></span>
+                  <span class="icon-graph card-graph"></span>
+                </div>
+
+                <!-- Card Text Section  -->
+                <div class="card-body">
+                  <p>Total Sells</p>
+                  <h2>1.028.623</h2>
+                </div>
+
+                <!-- Card Status Section  -->
+                <div class="card-status">
+                  <p>Start from 1 Jan 2021</p>
+                </div>
+              </div>
+            </div>
+           
+            
+            
+
+          </div>
+          <!-- End: Card Section  -->
+
+
+          <!-- Start: Product Section  -->
+          <div class="product-container d-flex flex-wrap">
+
+            <!-- Table Section  -->
+            <div class="product-box">
+              <div class="product">
+                <table class="product-table w-100">
+                  <thead>
+                    <tr>
+                      <th> No </th>
+                      <th> Product Name </th>
+                      <th> Status </th>
+                      <th> Sold </th>
+                      <th> View </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> 1 </td>
+                      <td> Playstation </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 2 </td>
+                      <td> X-box </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                    <tr>
+                      <td> 3 </td>
+                      <td> Micromax </td>
+                      <td> Active </td>
+                      <td> 10 </td>
+                      <td> 320 </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Chart Section  -->
+            <div class="chart-box">
+              <div class="chart">
+
+                <!-- Chart Heading  -->
+                <div class="chart-heading d-flex justify-content-between align-items-center">
+                  <h2> Views & Sells </h2>
+                  <p class="d-flex justify-content-between align-items-center"> This Week <span class="icon-toggle"></span> </p>
+                </div>
+
+                <!-- Chart Status  -->
+                <div class="chart-status">
+                  <p> Total Views </p>
+                  <p> Total Sells </p>
+                </div>
+
+                <!-- Chart Graph  -->
+                <div class="chart-graph">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End: Product Section  -->
+
+        </div>
+        <!-- End: Content Section  -->
+
+      </section>
+      <!-- End: Main Content Section  -->
+
+    </div>
+    <!-- End: Wrapper Section  -->
+  </body>
+</html>

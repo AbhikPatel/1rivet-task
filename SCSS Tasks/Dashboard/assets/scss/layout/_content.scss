@@ -1,0 +1,17 @@
+.content{
+    z-index: 99;
+    background-color: $body-bg;
+    margin-left: 80px;
+    padding: 30px 50px;
+    overflow: auto;
+    transition: $transition;
+    
+    label{
+        top: 45%;
+        left: 0;
+        color: $icon-color;
+        transition: $transition;
+        cursor: pointer;
+        font-size: $icon-size;
+    }
+}

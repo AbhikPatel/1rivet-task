@@ -1,0 +1,24 @@
+.chart-box{
+    padding: 20px;
+    width: 35%;
+
+    .chart{
+        background-color: $white;
+        height: 400px;
+        padding: 20px;
+
+        &-heading{
+            
+            h2{
+                font-size: 1rem;
+                color: $text-header-color;
+            }
+
+            p{
+                color: $icon-color;
+                font-size: 0.8rem;
+                width: 100px;
+            }
+        }
+    }
+}

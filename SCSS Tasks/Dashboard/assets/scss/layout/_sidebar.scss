@@ -1,0 +1,22 @@
+.sidebar{
+    width: $sidebar-width;
+    background-color: white;
+    
+    .menu{
+        
+        .items{
+            margin: 40px 0;
+        }
+        & .links{
+            padding: 10px;
+            font-size: $icon-size;
+            text-decoration: none;
+        }
+
+        & span{
+            color: $icon-color;
+        }
+    }
+}
+
+

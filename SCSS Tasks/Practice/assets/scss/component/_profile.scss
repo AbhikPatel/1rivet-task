@@ -1,0 +1,79 @@
+.profile{
+    padding-right: 20px;
+    
+    .search-box{
+        width: 50%;
+        border: 1px solid #e7e7e7;
+        border-radius: 10px;
+        padding: 0 10px;
+        height: 35px;
+
+        span{
+            position: absolute;
+        }
+
+        input{
+            border: transparent;
+            width: 100%;
+            padding-left: 30px;
+            
+            &:focus{
+                border: transparent;
+            }
+        }
+    }
+
+    .profile{
+
+        
+        &-heading{
+            padding: 20px 0;
+            
+            p{
+                color: #b2b2b2;
+            }
+        }
+
+        &-filter{
+            border: 2px solid #e7e7e7;
+            border-radius: 10px;
+            width: 100px;
+            height: 30px;
+            padding: 0 10px;
+
+            p{
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    .report{
+        border-radius: 30px;
+        padding: 30px 20%;
+        background-color: #f9f8f3;
+
+        &-card{
+
+            span{
+                background-color: #e4e0d5;
+                padding: 10px;
+                border-radius: 50%;
+                font-size: 1.25rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+                color: #a2a2a2;
+            }
+
+            h3{
+                font-size: 2.5rem;
+            }
+        }
+
+        &-content{
+            padding-top: 30px;
+            padding-left: 5px;
+        }
+    }
+}
