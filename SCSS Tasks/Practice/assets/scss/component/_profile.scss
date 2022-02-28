@@ -13,13 +13,13 @@
         }
 
         input{
-            border: transparent;
+            border: none;
             width: 100%;
             padding-left: 30px;
+            outline: none;
             
-            &:focus{
-                border: transparent;
-            }
+            // &:focus{
+            // }
         }
     }
 

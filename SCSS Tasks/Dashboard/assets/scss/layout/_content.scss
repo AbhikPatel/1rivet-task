@@ -5,6 +5,11 @@
     padding: 30px 50px;
     overflow: auto;
     transition: $transition;
+
+    @include breaks(mobile){
+        margin-left: 0;
+        z-index: 0;
+    }
     
     label{
         top: 45%;

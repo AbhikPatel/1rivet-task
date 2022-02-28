@@ -2,6 +2,10 @@
     padding: 20px;
     width: 35%;
 
+    @include breaks(tablet){
+        width: 100%;
+    }
+
     .chart{
         background-color: $white;
         height: 400px;

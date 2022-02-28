@@ -1,9 +1,24 @@
 .sidebar{
     width: $sidebar-width;
     background-color: white;
+    transition: 0.4s all;
+
     
-    .menu{
-        
+    @include breaks(mobile){
+        z-index: 9;
+        transform: translateX(-240px);
+        &:after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+    }
+
+    .menu{     
         .items{
             margin: 40px 0;
         }
@@ -19,4 +34,14 @@
     }
 }
 
-
+@include breaks(mobile)
+{
+    
+    #toggle:checked ~ .sidebar{
+        transform: translateX(0);
+    }
+    
+    #toggle:checked ~ .content{
+        filter: blur(8px);
+    }
+}
