@@ -1,0 +1,66 @@
+.product-table{
+
+    table{
+        background-color: $white;
+        border-collapse: collapse;
+
+        .table-img{
+            width: 20px;
+            margin-right: 20px;
+        }
+
+        .table-brand{
+            width: 60px;
+        }
+
+        th{
+            text-align: left;
+            color: $font-table-head;
+            padding: $table-data-padding;
+            font-weight: 400;
+            position: sticky;
+            top: 0;
+            background-color: $white;
+
+            @include breaks(tablet){
+                font-size: 0.8rem;
+            }
+        }
+
+        td{
+            padding: $table-data-padding;
+            border-top: 3px solid $body-bg;
+            cursor: pointer;
+            border-bottom: 3px solid $body-bg;
+
+            @include breaks(large-laptop){
+                font-size: 0.8rem;
+            }
+        }
+
+        .status{
+            border-radius: $table-status-radius;
+            padding: 3px 15px;
+        }
+        
+        .discard{
+            color: $danger;
+            background-color: rgba($danger, .1);
+        }
+
+        .waiting{
+            color: $warn;
+            background-color: rgba($warn, .1);
+        }
+
+        .want{
+            color: $success;
+            background-color: rgba($success, .1);
+        }
+
+        .cancel{
+            color: $black;
+            background-color: rgba($black, .1);
+        }
+    }
+}

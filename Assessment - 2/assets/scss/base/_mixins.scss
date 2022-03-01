@@ -1,0 +1,34 @@
+// All the SCSS mixins goes here
+
+@mixin breaks($size){
+
+    @if $size == large-laptop {
+        @media screen and (max-width: 1025px){
+            @content;
+        }
+    } 
+    @if $size == laptop {
+        @media screen and (max-width: 992px){
+            @content;
+        }
+    } 
+    @else if $size == tablet{
+        @media screen and (max-width: 768px){
+            @content;
+        }
+    }
+    @else if $size == mobile{
+        @media screen and (max-width: 576px){
+            @content;
+        }
+    }
+    @else if $size == iphone{
+        @media screen and (max-width: 320px){
+            @content;
+        }
+    }
+}
+
+
+
+

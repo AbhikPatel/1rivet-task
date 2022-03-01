@@ -1,0 +1,74 @@
+// Cards Scss 
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    cursor: pointer;
+    padding: 20px;
+    border-radius: $card-border-radius;
+    
+    &-box{
+        width: 16.66%;
+        padding: 10px;
+
+        @media screen and (max-width: 1320px){
+            width: 25%;
+        }
+
+        @include breaks(large-laptop){
+            width: 33.33%;
+        }
+
+        @include breaks(mobile){
+            width: 50%;
+        }
+
+        @include breaks(iphone){
+            width: 100%;
+        }
+    }
+    
+    &-content{
+        
+        .number{
+            font-size: $card-number;
+
+            @include breaks(mobile)
+            {
+                font-size: 1.25rem;
+            }
+        }
+
+    }
+
+    &-logo{
+        span{
+            font-size: $card-icon;
+            padding: 15px;
+            border-radius: $border-50;
+
+            @include breaks(mobile){
+                font-size: 1rem;
+            }
+        }
+
+        @each $clr,$clr-val in $card-icons {
+            .card-#{$clr}{
+                color: $clr-val;
+                background-color: rgba($clr-val, 0.2);
+            }
+        }
+    }
+        
+}
+
+@each $clr,$clr-val in $card-icons {
+    .card-#{$clr}:hover{
+        background-color: rgba($clr-val, 0.1);
+        border-left: 3px solid $clr-val;
+    }
+}
+
+

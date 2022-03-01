@@ -1,0 +1,103 @@
+.sidebar{
+    flex: 0 0 $sidebar-width;
+    transition: $transition;
+
+    
+    @include breaks(tablet){
+        position: absolute;
+        background-color: $white;
+        height: 100%;
+        width: $sidebar-width;
+        z-index: 99;
+        transform: $sidebar-transform;
+        border-right: 1px solid $border-color;
+    }
+
+    
+
+    .menu{
+        padding: $sidebar-padding 0;
+        list-style: none;
+
+        &-items{
+            margin: 10px 0;
+        }
+        
+        &-links{
+            display: flex;
+            align-items: center;
+            padding-left: $sidebar-padding;
+            height: 40px;
+            text-decoration: none;
+            transition: 0.2s all;
+
+            span{
+                padding-right: 20px;
+                font-size: 1.25rem;
+                color: $icon-color;
+            }
+
+            .link-text{
+                color: $font-menu;
+                transition: $transition;
+            }
+        }
+
+        &-links:hover{
+
+            span, .link-text{
+                color: $primary-color;
+            }
+
+            background-color: rgba($primary-color, .1);
+            border-left: 2px solid $primary-color;
+        }
+    }
+}
+
+#toggle{
+    display: none;
+
+    &:checked{
+
+        & ~ .sidebar{
+            flex: 0 0 60px;
+            
+            & .menu .menu-items .menu-links{
+                padding-left: 20px;
+            }
+
+            & .menu h3{
+                transform: $sidebar-links;
+                
+                @include breaks(tablet)
+                {
+                    transform: $transform-default;
+                }
+            }
+            
+            & .link-text{
+                transform: $sidebar-links;
+
+                @include breaks(tablet)
+                {
+                    transform: $transform-default;
+                }
+            }
+
+            @include breaks(tablet)
+            {
+                transform: $transform-default;
+            }
+
+            @include breaks(mobile)
+            {
+                width: 100%;
+                z-index: 9999;
+                
+            }
+        }
+
+    }
+}
+

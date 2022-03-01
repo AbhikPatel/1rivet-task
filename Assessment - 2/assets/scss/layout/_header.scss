@@ -1,0 +1,98 @@
+.top-head{
+    flex: 0 0 $header-height;
+    border-bottom: 1px solid $border-color;
+    
+    .logo{
+        width: $sidebar-width;
+
+        @include breaks(tablet)
+        {
+            display: none;
+        }
+    }
+    
+    .heading{
+        padding: 0 $header-padding;
+
+        @include breaks(mobile){
+            padding: 0 20px;
+        }
+
+        &-left{
+            
+            label{
+                padding-right: 20px;
+                color: $icon-color;
+                font-size: $header-icon;
+                
+            }
+        }
+        
+        &-right{
+            width: 200px;
+
+            .icon-bell{
+                color: $icon-color;
+                font-size: $header-icon
+            }
+
+            p{
+                font-weight: $font-bold;
+            }
+
+            @include breaks(mobile){
+                display: none;
+            }
+        }
+
+        
+        &-img{
+            width: $header-img;
+            border-radius: 50%;
+        }
+
+        .drop{
+            display: none;
+            color: $icon-color;
+            cursor: pointer;
+            font-size: $header-icon;
+            @include breaks(mobile){
+                display: block;
+            }
+        }
+    }
+}
+
+#dropdown{
+    display: none;
+
+    &:checked ~ .drop-menu{
+        display: block;
+    }
+}
+
+.drop-menu{
+    background-color: $white;
+    z-index: 999;
+    top: 50px;
+    display: none;
+    right: 40px;
+    transition: $transition;
+    padding: 10px;
+    border: 1px solid $primary-color;
+
+    .row{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        color: $black;
+
+        span{
+            padding: 0 20px;
+        }
+
+        img{
+            margin: 0 10px;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.dashboard{
+    background-color: $dashboard-bg;
+    padding: 20px $dashboard-padding;
+    
+    .card-container{
+        padding: 20px 0;
+        margin: 0 -10px;
+    }
+
+    .table-container{
+
+        height: 600px;
+
+        .table-heading{
+            padding: 20px 0;
+        }
+    }
+}
+
+@include breaks(tablet){
+    #toggle:checked ~ .dashboard{
+        filter: blur(8px);
+        pointer-events: none;
+    }
+}

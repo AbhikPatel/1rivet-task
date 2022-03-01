@@ -1,0 +1,36 @@
+// All the SCSS Variables goes here
+
+// Transition 
+$transition: 0.4s all;
+
+// Border 
+$border-50: 50%;
+
+// font 
+$font-family: 'Poppins', 'sans-sarif';
+$font-bold: 600;
+
+// header 
+$header-height: 80px;
+$header-padding : 40px;
+$header-icon: 1.25rem;
+$header-img: 30px;
+
+// Sidebar 
+$sidebar-width: 250px;
+$sidebar-padding: 2.5rem;
+$sidebar-transform: translateX(-260px);
+$sidebar-links: translateX(200px);
+$transform-default: translateX(0px);
+
+// Dashboard 
+$dashboard-padding: $header-padding;
+
+// Card 
+$card-border-radius: 5px;
+$card-number: 1.5rem;
+$card-icon: 1.25rem;
+
+// Table 
+$table-data-padding: 10px 20px;
+$table-status-radius: 30px; 

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/icomoon/style.css">
+    <link rel="stylesheet" href="./assets/css/style.min.css">
+    <title>Assessment - 2</title>
+</head>
+
+<body>
+    <!-- Start: Wrapper Section  -->
+    <div class="wrapper d-flex flex-column h-100">
+
+        <!-- Start: Header Section  -->
+        <header class="top-head d-flex">
+
+            <!-- Logo  -->
+            <div class="logo d-flex justify-content-center align-items-center">
+                <h1> TallyScan </h1>
+            </div>
+
+            <!-- Heading  -->
+            <div class="heading d-flex justify-content-between flex-grow align-items-center position-relative">
+                <div class="heading-left d-flex align-items-center cursor">
+                    <label for="toggle" class="cursor"><span class="icon-circle-down"></span></label>
+                    <h2>Dashboard</h2>
+                </div>
+
+                <div class="heading-right d-flex justify-content-between align-items-center cursor">
+                    <span class="icon-bell"></span>
+                    <img src="./assets/images/avatar.png" class="heading-img" alt="">
+                    <p> John Smith <span class="icon-circle-down"></span></p>
+                </div>
+
+                <!-- DropDown  -->
+                <label for="dropdown" class="drop"> <span class="icon-circle-down"></span> </label>
+                <input type="checkbox" id="dropdown">
+                <div class="drop-menu position-absolute">
+                    <div class="row"><img src="./assets/images/avatar.png" class="heading-img" alt="profile"> <p> John Smith </p></div>          
+                    <div class="row"><img src="./assets/images/avatar.png" class="heading-img" alt="profile"> <p> Abhishek Patel </p></div>          
+                    <div class="row"><img src="./assets/images/avatar.png" class="heading-img" alt="profile"> <p> Kevang Patel </p></div>          
+                    <div class="row"><img src="./assets/images/avatar.png" class="heading-img" alt="profile"> <p> Ankit Patel </p></div>          
+                    <div class="row"><img src="./assets/images/avatar.png" class="heading-img" alt="profile"> <p> Aman Patel </p></div>          
+                </div>
+            </div>
+        </header>
+        <!-- End: Header Section  -->
+
+        <!-- Start: Content Section  -->
+        <div class="content flex-grow d-flex overflow-hidden position-relative">
+
+            <!-- Start: Sidebar Section  -->
+            <input type="checkbox" id="toggle">
+            <aside class="sidebar overflow-hidden">
+                
+                <!-- Menu 1  -->
+                <ul class="menu">
+                    <h3> GENERAL </h3>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-search"></span>
+                            <div class="link-text"> Search </div>
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-bell"></span>
+                            <div class="link-text"> Alerts </div>
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-price-tag"></span>
+                            <div class="link-text"> Tags </div>
+                        </a>
+                    </li>
+                </ul>
+
+
+                <!-- Menu 2  -->
+                <ul class="menu">
+                    <h3> OTHERS </h3>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-setting"></span>
+                            <div class="link-text"> Settings </div>
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-sun"></span>
+                            <div class="link-text"> Tips </div>
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-bin"></span>
+                            <div class="link-text"> Trash </div>
+                        </a>
+                    </li>
+                    <li class="menu-items">
+                        <a href="#" class="menu-links"> <span class="icon-exit"></span>
+                            <div class="link-text"> Log Out </div>
+                        </a>
+                    </li>
+                </ul>
+            </aside>
+            <!-- End: Sidebar Section  -->
+
+            <!-- Start: Dashboard Section  -->
+            <div class="dashboard flex-grow overflow-auto">
+
+                <!-- Filter Button  -->
+                <div class="filter-container text-align-right">
+                    <button class="filter-btn"> <span class="icon-filter"></span> Filter </button>
+                </div>
+
+                <!-- Start: Cards Section  -->
+                <div class="card-container d-flex flex-wrap">
+
+                    <!-- Card - Scans   -->
+                    <div class="card-box">
+                        <div class="card card-scan">
+                            <div class="card-content">
+                                <h4> Scans </h4>
+                                <b class="number"> 350 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-barcode card-scan"></span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Card - List   -->
+                    <div class="card-box">
+                        <div class="card card-list">
+                            <div class="card-content">
+                                <h4> List </h4>
+                                <b class="number"> 350 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-list card-list"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card - Cost   -->
+                    <div class="card-box">
+                        <div class="card card-cost">
+                            <div class="card-content">
+                                <h4> Cost </h4>
+                                <b class="number"> $345 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-sun card-cost"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card - Buy Now   -->
+                    <div class="card-box">
+                        <div class="card card-now">
+                            <div class="card-content">
+                                <h4> Buy Now </h4>
+                                <b class="number"> 350 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-cart card-now"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card - Buy Cheaper   -->
+                    <div class="card-box">
+                        <div class="card card-cheap">
+                            <div class="card-content">
+                                <h4> Buy Cheaper </h4>
+                                <b class="number"> 350 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-dollar card-cheap"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card - Buy Healthier   -->
+                    <div class="card-box">
+                        <div class="card card-healthy">
+                            <div class="card-content">
+                                <h4> Buy Healthier </h4>
+                                <b class="number"> 350 </b>
+                            </div>
+                            <div class="card-logo">
+                                <span class="icon-heart-broken card-healthy"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Cards Section  -->
+
+                <!-- Start: Table Section  -->
+                <div class="table-container overflow-hidden">
+
+                    <!-- Table Head  -->
+                    <div class="table-heading">
+                        <h2> Recent Activity </h2>
+                    </div>
+
+                    <!-- Table Content  -->
+                    <div class="product-table h-100 overflow-auto">
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th>Items <span class="icon-circle-down"></span></th>
+                                    <th>Date <span class="icon-circle-down"></span></th>
+                                    <th>Type </th>
+                                    <th>Est. Cost <span class="icon-circle-down"></span></th>
+                                    <th>Last <span class="icon-circle-down"></span></th>
+                                    <th>List <span class="icon-circle-down"></span></th>
+                                    <th>Auto </th>
+                                    <th>Buy Now </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td><img src="./assets/images/amazon.jpg" alt="" class="table-brand"> </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status waiting"> Waiting </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status want"> Want </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status want"> Want </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status cancel"> Canceled </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status waiting"> Waiting </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status waiting"> Waiting </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status discard"> Discard </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status want"> Want </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                <tr>
+                                    <td class="d-flex align-items-center"> <img src="./assets/images/product2.jpg" class="table-img" alt=""> Skippy Peanut Butter 160z</td>
+                                    <td>07 Nov, 8:35pm</td>
+                                    <td> <span class="status want"> Want </span> </td>
+                                    <td> $40.27 </td>
+                                    <td> 18 Aug </td>
+                                    <td> Grocery </td>
+                                    <td> No </td>
+                                    <td> N/A </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- End: Table Section  -->
+            </div>
+            <!-- End: Dashboard Section  -->
+        </div>
+        <!-- End: Content Section  -->
+    </div>
+    <!-- End: Wrapper Section  -->
+</body>
+
+</html>
