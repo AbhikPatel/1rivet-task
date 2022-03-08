@@ -1,0 +1,17 @@
+// Sidebar Scss 
+
+.sidebar{
+    flex: 0 0 $sidebar-width;
+    
+    .navbar{
+
+        &-item{
+            
+        }
+        &-link{
+           
+            text-decoration: none;
+        }
+        
+    }
+}
