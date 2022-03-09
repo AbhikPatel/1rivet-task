@@ -1,54 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link CSS  -->
-    <link rel="stylesheet" href="./assets/css/style.min.css">
-    <!-- Link Bootstrap CSS  -->
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
-    <!-- Icons Theme  -->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Bootstrap Dashboard</title>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS  -->
+  <link rel="stylesheet" href="./assets/css/style.min.css">
+  <!-- Icons Theme  -->
+  <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+  <title>Bootstrap Dashboard</title>
 </head>
+
 <body>
   <!-- Start: Wrapper Section  -->
   <div class="wrapper d-flex h-100">
     <!-- Start: Sidebar Section  -->
-    <!-- <input type="checkbox" id="toggle"> -->
-    <aside class="sidebar">
-      <a class="navbar-brand" href="#"><i class='bx bxl-meta' ></i></a>
-      <ul class="navbar-nav mt-5 d-flex">
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bx-home-alt'></i> <span> Home </span> </a>
-        </li>
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bx-trophy'></i> <span> Projects </span> </a>
-        </li>
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bxs-bank'></i><span> Billings </span> </a>
-        </li>
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bx-user'></i> <span> Team Members </span> </a>
-        </li>
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bx-bar-chart-alt-2'></i> <span> Stats </span> </a>
-        </li>
-        <li class="navbar-item d-flex align-items-center">
-          <a href="#" class="navbar-link "><i class='bx bxs-brightness'></i><span> Settings </span> </a>
-        </li>
-      </ul>
+    <input type="checkbox" id="toggle">
+    <aside class="sidebar d-flex flex-column overflow-hidden">
+      <label for="toggle" class="sidebar-toggle ms-5 mt-3"><i class='bx bxl-meta'></i></label>
+      <div class="sidebar-content d-flex flex-column justify-content-between flex-grow-1">
+
+        <ul class="nav mt-5 flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4 active"><i class='bx bx-home-alt pe-3'></i> <span class="nav-text"> Home
+              </span> </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4"><i class='bx bx-trophy pe-3'></i> <span class="nav-text"> Projects </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4"><i class='bx bxs-bank pe-3'></i><span class="nav-text"> Billings </span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4"><i class='bx bx-user pe-3'></i> <span class="nav-text"> Team Members
+              </span> </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4"><i class='bx bx-bar-chart-alt-2 pe-3'></i> <span class="nav-text"> Stats
+              </span> </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link mb-4"><i class='bx bxs-brightness pe-3'></i><span class="nav-text"> Settings
+              </span> </a>
+          </li>
+        </ul>
+
+        <div class="profile text-center">
+          <div class="profile-content position-relative">
+            <img class="profile-photo" src="./assets/images/23445.jpg" alt="Profile" />
+            <div class="notification position-absolute"></div>
+          </div>
+          <h2 class="profile-text mt-3"> Abhishek Patel </h2>
+        </div>
+      </div>
     </aside>
     <!-- End: Sidebar Section  -->
-    
-    <!-- Start: Content Section  -->
-    <div class="content">
 
+    <!-- Start: Dashboard Section  -->
+    <div class="row d-flex p-5 flex-grow-1">
+
+      <!-- Start: Content Section  -->
+      <div class="col-9 flex-grow-1">
+
+        <!-- Search Box  -->
+        <div class="search input-group">
+          <span class="input-group-text" id="basic-addon1"><i class='bx bx-search fs-5'></i></span>
+          <input type="text" class="form-control" placeholder="Search for stats" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+
+        <!-- Dashboard Heading  -->
+        <div class="content-heading d-flex justify-content-between mt-5 align-items-center">
+          <div class="welcome">
+            <h1> Hello Abhishek </h1>
+            <div class="text"> Welcome Back! </div>
+          </div>
+          <div class="filter">
+            <div class="input-group">
+              <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" placeholder="Filter">
+              <span class="input-group-text"><i class='bx bx-git-repo-forked'></i></span>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+      <!-- End: Content Section  -->
+
+      <!-- Start: Sales Section  -->
+      <div class="col-3">
+
+      </div>
+      <!-- End: Sales Section  -->
     </div>
-    <!-- End: Content Section  -->
+    <!-- End: Dashboard Section  -->
   </div>
   <!-- End: Wrapper Section  -->
 </body>
+
 </html>

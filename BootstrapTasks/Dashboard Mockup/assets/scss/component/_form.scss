@@ -1,0 +1,22 @@
+.search{
+    width: 200px;
+
+    .input-group-text {
+        border-right: 0;
+    }
+    
+    .form-control{
+        border-left: 0;
+    }
+}
+
+.filter{
+    width: 200px;
+
+    .input-group{
+
+        .input-group-text {
+            border-left: 0;
+        }
+    }
+}

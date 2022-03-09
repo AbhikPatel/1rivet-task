@@ -2,16 +2,68 @@
 
 .sidebar{
     flex: 0 0 $sidebar-width;
+    border-right: 1px solid $sidebar-border-color;
     
-    .navbar{
+    &-toggle{
+        font-size: 2.25rem;
+        cursor: pointer;
+    }
 
-        &-item{
-            
-        }
+    .nav{
         &-link{
-           
-            text-decoration: none;
+            height: 40px;
+            // border: 1px solid red;
+            color: $primary;
+            display: flex;
+            align-items: center;
+            border: 4px solid transparent;
+            white-space: nowrap;
+            
+            .bx{
+                font-size: 1.75rem;
+            }
+            
+            &:hover{
+                font-weight: 600;
+                border-left: 4px solid $primary;
+            }
+        }        
+    }
+
+    .profile{
+        position: relative;
+
+        &-content{
+            width: $sidebar-profile-size;
+            height: $sidebar-profile-size;
+            border: 1px solid $sidebar-border-color;
+            border-radius: 10px;
+            text-align: center;
+            margin: 0 auto;
+            
+            .notification{
+                position: absolute;
+                right: -3px;
+                bottom: 0;
+                width: $notification-size;
+                height: $notification-size;
+                border-radius: 50%;
+                background-color: green;
+            }
         }
         
+        &-photo{
+            width: $sidebar-profile-size;
+            height: $sidebar-profile-size;
+            object-fit: cover;
+            object-position: top;
+            padding: 7px;
+            border-radius: 15px;
+        }
+
+        &-text{
+            font-size: 1.5rem;
+        }
+
     }
 }
