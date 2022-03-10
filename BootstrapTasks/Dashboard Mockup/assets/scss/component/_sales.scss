@@ -1,6 +1,28 @@
-.sales{
-    min-width: 350px;
-    background-color: black;
+.revenue{
+    min-width: $revenue-width;
+    background-color: $primary;
     border-radius: 30px;
     margin-left: 60px;
+
+    &-card{
+        width: 50%;
+
+        &-content{
+            .value{
+                font-weight: 600;
+                font-size: 1.25rem;
+            }
+        }
+
+        .bx{
+            font-size: 1.5rem;
+            color: $primary;
+            background-color: #e2e2e2;
+            border-radius: 50%;
+        }
+    }
+
+    &-text{
+        font-size: 0.8rem;
+    }
 }

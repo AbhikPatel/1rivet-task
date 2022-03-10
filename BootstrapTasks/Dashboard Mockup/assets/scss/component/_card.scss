@@ -54,3 +54,28 @@
         }
     }
 }
+
+.status-board{
+    border-radius: 30px;
+    background-color: #f9f8f3;
+}
+
+.card-content{
+    .bx{
+        font-size: 1.25rem;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: darken(#f9f8f3,10);
+    }
+
+    .card-num{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+@each $name, $color in $card{
+        .card.card-#{$name} {
+            background-color: $color;
+        }
+} 

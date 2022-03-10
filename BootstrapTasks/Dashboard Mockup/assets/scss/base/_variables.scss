@@ -10,12 +10,12 @@ $nowrap: nowrap;
 $font-family : 'Poppins' , sans-serif;
 
 // Sidebar 
-$sidebar-width: 350px;
-$sidebar-profile-size: 60px;
+$sidebar-width: 300px;
+$sidebar-profile-size: 40px;
 
 // Nav 
 $nav-link-padding-y:                .5rem;
-$nav-link-padding-x:                3.75rem;
+$nav-link-padding-x:                3.5rem;
 $nav-tabs-link-hover-border-color:  $primary;
 $nav-link-transition:               $transition;
 
@@ -31,3 +31,7 @@ $input-focus-box-shadow: 0;
 $card-spacer-x:   2.25rem;
 $card-spacer-y:   2.25rem;
 $card-border-radius: 30px;
+$card-border-width: 0;
+
+// Revenue
+$revenue-width: 350px;

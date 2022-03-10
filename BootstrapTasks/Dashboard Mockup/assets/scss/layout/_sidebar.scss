@@ -8,6 +8,8 @@
     &-toggle{
         font-size: 2.25rem;
         cursor: pointer;
+        margin-left: 60px;
+        transition: $transition;
     }
 
     .nav{
@@ -68,29 +70,30 @@
         &-text{
             font-size: 1.5rem;
             white-space: $nowrap;
+            transition: $transition;
         }
 
     }
 }
 
 #toggle:checked {
-    & ~ aside{
-        flex: 0 0 60px;
+    & ~ .sidebar{
+        flex: 0 0 80px;
         
         & .nav-link{
-            padding: 0 10px;
+            padding: 0 20px;
 
             & .nav-text{
-                // transform: translateX(250px);
+                transform: translateX(250px);
             }
+        }
+        & .sidebar-toggle{
+            margin-left: 20px;
+        }
+        & .profile .profile-text{
+            transform: translateX(250px);
         }
     }
 
-    & ~ .sidebar-toggle{
-        margin-left: 10px;
-    }
 
-    & ~ .profile .profile-text{
-        transform: translateX(250px);
-    }
 }
