@@ -1,0 +1,56 @@
+.card{
+
+    &-content-header{
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .output{
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    & .percent {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    & svg {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        transform: rotate(-90deg);
+    
+        circle {
+          width: 100%;
+          height: 100%;
+          fill: none;
+          stroke-width: 6;
+          stroke-linecap: round;
+    
+            &:last-of-type {
+                stroke-dasharray: 400px;
+                stroke-dashoffset: calc(400px - (220px * var(--percent)) / 100);
+                stroke: #000000;
+            }
+        }
+    }
+    
+    & .number {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    
+        span {
+            font-weight: 200;
+            font-size: 1.5rem;
+            
+            span {
+                font-size: 1rem;
+            }
+        }
+    }
+}

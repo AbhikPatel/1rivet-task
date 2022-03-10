@@ -3,6 +3,7 @@
 .sidebar{
     flex: 0 0 $sidebar-width;
     border-right: 1px solid $sidebar-border-color;
+    transition: $transition;
     
     &-toggle{
         font-size: 2.25rem;
@@ -12,12 +13,11 @@
     .nav{
         &-link{
             height: 40px;
-            // border: 1px solid red;
             color: $primary;
             display: flex;
             align-items: center;
             border: 4px solid transparent;
-            white-space: nowrap;
+            white-space: $nowrap;
             
             .bx{
                 font-size: 1.75rem;
@@ -27,12 +27,16 @@
                 font-weight: 600;
                 border-left: 4px solid $primary;
             }
+
+            .nav-text{
+                transition: $transition;
+            }
         }        
     }
 
     .profile{
         position: relative;
-
+        
         &-content{
             width: $sidebar-profile-size;
             height: $sidebar-profile-size;
@@ -63,7 +67,30 @@
 
         &-text{
             font-size: 1.5rem;
+            white-space: $nowrap;
         }
 
+    }
+}
+
+#toggle:checked {
+    & ~ aside{
+        flex: 0 0 60px;
+        
+        & .nav-link{
+            padding: 0 10px;
+
+            & .nav-text{
+                // transform: translateX(250px);
+            }
+        }
+    }
+
+    & ~ .sidebar-toggle{
+        margin-left: 10px;
+    }
+
+    & ~ .profile .profile-text{
+        transform: translateX(250px);
     }
 }
